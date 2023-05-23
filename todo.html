@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./todo.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">
+          <img class="logo-img" src="images/profile-img.jpg" alt="logo-img" />
+          <h2 class="name">مسعود بختیاری</h2>
+        </div>
+        <div class="menu">
+          <div id="menu-add" class="menu-add">
+            <div class="menu-title">
+              <h3 class="menu-title_text">اضافه کردن تسک</h3>
+            </div>
+            <div class="add-item">
+              <input
+                id="taskname"
+                class="add-item_input"
+                type="text"
+                placeholder="تسک را وارد کنید"
+              />
+              <button id="btn" class="add-item_button">اضافه کن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <h3 class="cards-title_text">تسک هایی که باید انجام شوند</h3>
+        <div id="todo" class="todo"></div>
+        <h3 class="cards-title_text">تسک های انجام شده</h3>
+        <div id="completed" class="completed"></div>
+      </div>
+    </div>
+    <script src="./todo.js"></script>
+  </body>
+</html>
